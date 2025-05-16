@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo docker container prune
+sudo docker volume prune

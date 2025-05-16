@@ -1,0 +1,26 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+    container_name: mosquitto
+    networks:
+      - iot-net
+
+  nodered:
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered/data:/data
+    container_name: nodered
+    networks:
+      - iot-net
+    depends_on:
+      - mosquitto
+
+networks:
+  iot-net:
+    driver: bridge
