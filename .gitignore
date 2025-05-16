@@ -1,2 +1,5 @@
-./device/credentials.hpp
+device/credentials.hpp
+
+server/nodered
+server/mosquitto
 
