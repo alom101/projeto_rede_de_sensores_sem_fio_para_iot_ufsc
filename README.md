@@ -30,14 +30,16 @@ Outros: [link](https://dockerlabs.collabnix.com/intermediate/workshop/DockerComp
 
 Clone este repositório com o seguinte comando
 ```bash
-git clone ... # <<< TODO
+git clone https://github.com/alom101/projeto_rede_de_sensores_sem_fio_para_iot_ufsc.git
 ```
 
 ## Uso
-No diretório `./server/` onde se encontra o arquivo `docker-compose.yml`, execute o seguinte comando:
 
 ```bash
-sudo docker-compose up
+cd server/
+sudo docker-compose up -build #-d para rodar no background
 ```
 
+NodeRED: http://localhost:1880
+Mosquitto: localhost:1883
 

@@ -10,7 +10,11 @@ services:
       - iot-net
 
   nodered:
-    image: nodered/node-red
+    build:
+      context: .
+      dockerfile_inline: |
+        FROM nodered/node-red
+        RUN npm install @flowfuse/node-red-dashboard
     ports:
       - "1880:1880"
     volumes:
