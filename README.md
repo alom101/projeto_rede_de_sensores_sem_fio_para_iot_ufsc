@@ -10,7 +10,7 @@ UFSC
 ## Tópicos MQTT
 
 Os tópicos serão divididos hierarquicamente na seguinte estrutura:
-
+```
 estufa
 |- temperatura
 |   |- valor_atual
@@ -30,7 +30,7 @@ estufa
     |- versao_firmware
     |- log
     |- timestamp
-
+```
 # Servidor
 
 Para o servidor de aplicação, usamos o broker MQTT Mosquitto para comunicação com os dispositivos e um servidor NodeRED para processamento e dashboard. Toda parte server-side foi desenvolvida em containers Docker para facilitar a replicação dos resultados obtidos.
