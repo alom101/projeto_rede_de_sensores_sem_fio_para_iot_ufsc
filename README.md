@@ -7,6 +7,29 @@ UFSC
 
 # Dispositivos
 
+## Tópicos MQTT
+
+Os tópicos serão divididos hierarquicamente na seguinte estrutura:
+
+estufa
+|- temperatura
+|   |- valor_atual
+|   |- limiar
+|
+|- umidade_do_ar
+|   |-valor_atual
+|   |- limiar
+|
+|- umidade_do_solo
+|   |-valor_atual
+|
+|- ventilacao
+|   |-valor_atual
+|
+|- status
+    |- versao_firmware
+    |- log
+    |- timestamp
 
 # Servidor
 
